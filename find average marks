@@ -1,0 +1,10 @@
+
+mOne = int(input())
+mTwo = int(input())
+mThree = int(input())
+
+sum = mOne+mTwo+mThree
+avg = sum/3
+
+
+print(avg)
