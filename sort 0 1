@@ -1,0 +1,11 @@
+from sys import stdin
+
+def sortZeroesAndOne(arr, n) :
+    #Your code goes here 
+    nextzero=0
+    for i in range(n):
+        if arr[i]==0:
+            temp=arr[nextzero]
+            arr[nextzero]=arr[i]
+            arr[i]=temp
+            nextzero+=1
