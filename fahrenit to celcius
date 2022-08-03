@@ -1,0 +1,9 @@
+start = int(input())
+end = int(input())
+step = int(input())
+
+CFV = start
+while CFV <= end:
+    CV = (5 / 9) * (CFV - 32)
+    print(str(CFV) + "\t" + str(int(CV)))
+    CFV += step
