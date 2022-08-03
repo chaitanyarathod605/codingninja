@@ -1,0 +1,20 @@
+from sys import stdin 
+
+def sort012(arr, n) :
+    nextzero = 0
+    nexttwo = n-1
+    i = 0
+    while i <= nexttwo:
+        if arr[i] == 0:
+            temp = arr[nextzero]
+            arr[nextzero] = arr[i]
+            arr[i] = temp
+            i = i + 1
+            nextzero = nextzero + 1
+        elif arr[i] == 2:
+            temp = arr[nexttwo]
+            arr[nexttwo] = arr[i]
+            arr[i] = temp
+            nexttwo = nexttwo - 1
+        else:
+            i = i + 1
