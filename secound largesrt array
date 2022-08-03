@@ -1,0 +1,45 @@
+from sys import stdin
+def secondLargestElement(arr, n):
+    #Your code goes here
+    if n==0:
+        return -2147483648
+    l=arr[0]
+    s=-2147483648
+
+    for i in range(n):
+        if arr[i]>l:
+            s=l
+            l=arr[i]
+
+        elif arr[i]<l and arr[i]>s:
+            s=arr[i]
+    return(s)
+
+
+
+#Taking Input Using Fats I/O
+def takeInput() :
+    n = int(stdin.readline().rstrip())
+    if n == 0:
+        return list(), 0
+
+    arr = list(map(int, stdin.readline().rstrip().split(" ")))
+    return arr, n
+
+
+#to print the array/list 
+def printList(arr, n) : 
+    for i in range(n) :
+        print(arr[i], end = " ")
+    print()
+
+
+#main
+t = int(stdin.readline().rstrip())
+
+while t > 0 :
+
+    arr, n = takeInput()
+    print(secondLargestElement(arr, n))
+
+    t -= 1
