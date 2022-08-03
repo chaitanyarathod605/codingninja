@@ -1,0 +1,23 @@
+n=int(input())
+# we will print 1 first and then take care of rest of the code
+if n>=1:
+    print(1)
+# now will make loop for rest of the pattern
+i=1
+while i<n:
+    print(1,end="")
+    j=1
+    #now for 2
+    while j<i:
+        print(2,end="")
+        j+=1
+        
+    print(1,end="")
+    i+=1
+    print()
+    
+   output - 
+1
+11
+121
+1221
