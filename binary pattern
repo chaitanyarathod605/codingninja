@@ -1,0 +1,16 @@
+n = int(input())
+for i in range (0,n,1):
+    j = n-i 
+    while j>0 :
+        if i %2 ==0:
+            print(1,end="")
+        else :
+            print(0,end="")
+        j-=1
+    print()
+    
+    output - 
+1111
+000
+11
+0
